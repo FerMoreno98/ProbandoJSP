@@ -1,0 +1,57 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de registro</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+
+<body>
+
+<h1>Registro</h1>
+
+<form action="RecogeDatos.jsp" method="post">
+
+  <label for="nombre">Nombre</label>
+  <input type="text" name="nombre">
+
+  <label for="apellido">Apellido</label>
+  <input type="text" name="apellido">
+
+  <label for="username">Nombre de usuario</label>
+  <input type="text" name="nombreusu">
+
+  <label for="contrasena">Contraseña</label>
+  <input type="password" name="contrasena">
+
+  <label for="pais">País</label>
+  <select name="pais">
+    <option value="Espana">España</option>
+    <option value="Chile">Chile</option>
+    <option value="Peru">Perú</option>
+    <option value="Argentina">Argentina</option>
+    <option value="Mexico">México</option>
+  </select>
+
+  <div id="radio-group">
+    <label>
+      <input type="radio" name="lenguaje" value="java">
+      Java
+    </label>
+
+    <label>
+      <input type="radio" name="lenguaje" value="python">
+      Python
+    </label>
+
+    <label>
+      <input type="radio" name="lenguaje" value="kotlin">
+      Kotlin
+    </label>
+  </div>
+
+  <input type="submit" value="Enviar">
+
+</form>
+
+</body>
