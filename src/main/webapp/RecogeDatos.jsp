@@ -21,15 +21,15 @@ try {
 
 	String apellido=request.getParameter("apellido");
 
-	String usuario=request.getParameter("username");
+	String usuario=request.getParameter("nombreusu");
 
-	String contrasena=request.getParameter("password");
+	String contrasena=request.getParameter("contrasena");
 
 	String pais=request.getParameter("pais");
 
 	String tecnologia=request.getParameter("lenguaje");
 	
-	String sql="INSERT INTO datos(nombre, apellido, nombreusu, contrasena, pais, tecnologia) VALUES(?, ?, ?, ?, ?, ?)";
+	String sql="INSERT INTO datos(nombre, apellido, nombreusu, contrasena, pais, lenguaje) VALUES(?, ?, ?, ?, ?, ?)";
 	
 	try(java.sql.Connection con=java.sql.DriverManager.getConnection("jdbc:mysql://localhost:3306/registrousuario","root","");
 			java.sql.PreparedStatement ps=con.prepareStatement(sql)){
